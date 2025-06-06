@@ -14,11 +14,15 @@
 
 	<ItemGroup>
 		<None Remove="appsettings.json" />
+		<None Remove="Data\data.db" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<Content Include="appsettings.json">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\data.db">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
 	</ItemGroup>
 
